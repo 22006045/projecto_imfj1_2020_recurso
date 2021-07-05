@@ -49,7 +49,7 @@ The assignment for the course is as follows:
 
 ## Project delivery
 
-* Project is individual (for just the viewer application), or in groups of up to 3 students (for the rest)
+* Project is individual (for just the viewer application), or individual or groups of up to 3 students (for the rest)
 * Git commit history will be analyzed to see individual work of students in the overall project
 * Project has to be delivered up 15th July 2021 (midnight), and link delivered on the course's Moodle page
   * Deliverables have to include a link to the Github repo
