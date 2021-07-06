@@ -313,3 +313,29 @@ class Mesh:
         mesh.polygons.append(poly)
 
         return mesh
+
+    @staticmethod
+    def create_Pyramide(sides, mesh=None):
+        """
+        Adds the n polygons necessary to form s Pyramide with the given sides.
+        If a source mesh is not given, a new mesh is created.
+        This Pyramide will be centered on the origin (0,0,0).
+
+        Arguments:
+            size {3-tuple} -- (x,y,z) size of the cube
+            mesh {Mesh} -- Mesh to add the polygons. If not given, create a new mesh
+
+        Returns:
+            {Mesh} - Mesh where the polygons were added
+        """
+
+        # Create mesh if one was not given
+        if mesh is None:
+            mesh = Mesh("UnknownPyramide")
+
+        #Add triangle part of pyramide
+        Points = []
+        adding_angle = 360/(sides)
+        radius = 0.5
+        angle = 0
+        next_point = 1
