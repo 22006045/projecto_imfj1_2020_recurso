@@ -114,4 +114,41 @@ def main():
             q = Quaternion.AngleAxis(axis, math.radians(angle) * 0.1)
             obj1.rotation = q * obj1.rotation
 
+        #Detect if key is pressed and move object up relative to screen(+yAxis)
+        if event.key == pygame.K_w:
+            #Take coordinate x,y,z and add value to y.
+            obj1.position=Vector3(obj1.position.x,obj1.position.y+0.001,obj1.position.z)
+
+        #Detect if key is pressed and move object down relative to screen(-yAxis)
+        if event.key == pygame.K_s:
+            #Take coordinate x,y,z and add value to y.
+            obj1.position=Vector3(obj1.position.x,obj1.position.y-0.001,obj1.position.z)
+
+        #Detect if key is pressed and move object right relative to screen(+xAxis)
+        if event.key == pygame.K_d:
+            #Take coordinate x,y,z and add value to x.
+            obj1.position=Vector3(obj1.position.x+0.001,obj1.position.y,obj1.position.z)
+
+        #Detect if key is pressed and move object left relative to screen(-xAxis)
+        if event.key == pygame.K_a:
+            #Take coordinate x,y,z and add value to x.
+            obj1.position=Vector3(obj1.position.x-0.001,obj1.position.y,obj1.position.z)
+
+        #Detect if key is pressed and move object towards screen(+zAxis)
+        if event.key == pygame.K_q:
+            #Take coordinate x,y,z and add value to x.
+            obj1.position=Vector3(obj1.position.x,obj1.position.y,obj1.position.z+0.001)
+
+        #Detect if key is pressed and move object away from screen(-zAxis)
+        if event.key == pygame.K_e:
+            #Take coordinate x,y,z and add value to x.
+            obj1.position=Vector3(obj1.position.x-0.001,obj1.position.y,obj1.position.z-0.001)
+            
+            
+            
+            
+
+            
+
+            
 
