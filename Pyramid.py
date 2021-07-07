@@ -39,8 +39,7 @@ def main():
     obj1.material = Material(Color(1, 0, 0, 1), "TestMaterial1")
     scene.add_object(obj1)
 
-     # Specify the rotation of the object. It will rotate 15 degrees around the axis given,
-    # every second
+    # Specify the rotation of the object. It will rotate around the axis given, every second
 
     # Timer
     delta_time = 0
@@ -48,3 +47,15 @@ def main():
 
     pygame.mouse.set_visible(True)
     pygame.event.set_grab(False)
+
+     # Game loop, runs forever
+    while True:
+        # Process OS events
+        for event in pygame.event.get():
+            # Checks if the user closed the window
+            if event.type == pygame.QUIT:
+                # Exits the application immediately
+                return
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_ESCAPE:
+                    return
