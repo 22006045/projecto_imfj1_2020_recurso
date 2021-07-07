@@ -114,4 +114,10 @@ def main():
             q = Quaternion.AngleAxis(axis, math.radians(angle) * 0.1)
             obj1.rotation = q * obj1.rotation
 
+        #Detect if key is pressed and move object up relative to screen(+yAxis)
+        if event.key == pygame.K_w:
+            #Take coordinate x,y,z and add value to y.
+            obj1.position=Vector3(obj1.position.x,obj1.position.y+0.0005,obj1.position.z)
+
+            
 
