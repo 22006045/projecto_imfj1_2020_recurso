@@ -29,6 +29,12 @@ def main():
     scene.camera = Camera(False, res_x, res_y)
 
     # Moves the camera back 2 units
-    scene.camera.position -= Vector3(0, 0, 3)
+    scene.camera.position -= Vector3(0, 0, 2)
 
-   
+    # Create a Pyramid and place it in a scene, at position (0,0,0) and with 5 Points
+    obj1 = Object3d("TestObject")
+    obj1.scale = Vector3(1, 1, 1)
+    obj1.position = Vector3(0, 0, 0)
+    obj1.mesh = Mesh.create_Pyramid(5)
+    obj1.material = Material(Color(1, 0, 0, 1), "TestMaterial1")
+    scene.add_object(obj1)
