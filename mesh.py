@@ -342,7 +342,27 @@ class Mesh:
         
         #First point has 0 degree angle, and the following depend on the number os sides the pyramid has.
         #Following the logic used by the teacher in the triangles for the sphere, using values for pyramid.
-        for point in range (sides):
+        for x in range (sides):
             Points.append((radius*math.cos((angle/180)*math.pi),radius*math.sin((angle/180)*math.pi)))
             angle += Plus_angle
-                
+        
+      
+        #Creating triangles based on the number of points given
+        for point in range(len(Points)):
+            #Cycle through all points
+            next_point = next_point+1
+
+            #As defined "create_tri" takes a Vector 3 with coordinates point1, point2, point3
+            Mesh.create_tri(Vector3(Points[point][0],Points[point][1] , Points[point][2]),
+            #Base coordinates
+            Vector3(0 ,0 ,0.5),
+            #Using Given Points
+            Vector3(Points[next_point][0],Points[next_point][1] ,Points[next_point][2] ), mesh)
+
+            
+            #If this happens we have cycled through all points
+            if(next_point==len(Points)):
+                next_point=0
+
+     
+        return mesh
