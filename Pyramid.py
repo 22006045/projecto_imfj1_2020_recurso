@@ -59,3 +59,13 @@ def main():
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
                     return
+
+        #If this key is pressed
+        if event.key == pygame.K_LEFT:
+            angle = 0.1
+            axis = Vector3(0, 1, 0)
+            axis.normalize()
+            ax = (axis * math.radians(angle) * 0.1)
+            q = Quaternion.AngleAxis(axis, math.radians(angle) * 0.1)
+            obj1.rotation = q * obj1.rotation
+
