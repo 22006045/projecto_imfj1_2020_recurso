@@ -38,3 +38,13 @@ def main():
     obj1.mesh = Mesh.create_Pyramid(5)
     obj1.material = Material(Color(1, 0, 0, 1), "TestMaterial1")
     scene.add_object(obj1)
+
+     # Specify the rotation of the object. It will rotate 15 degrees around the axis given,
+    # every second
+
+    # Timer
+    delta_time = 0
+    prev_time = time.time()
+
+    pygame.mouse.set_visible(True)
+    pygame.event.set_grab(False)
