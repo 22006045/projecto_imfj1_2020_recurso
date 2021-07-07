@@ -1,0 +1,77 @@
+[33mcommit ad889d5b1001445ed510d97f8eae57760981a2c7[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: peta <coisasdohapo@gmail.com>
+Date:   Wed Jul 7 15:36:29 2021 +0100
+
+    Same proccess for every other direction
+
+[33mcommit 4e5023b0e30b9a2e0e47836ff7a187496bd6bd4e[m
+Author: peta <coisasdohapo@gmail.com>
+Date:   Wed Jul 7 14:03:39 2021 +0100
+
+    Repeat previous commit for every other Key
+
+[33mcommit d298aa05ffcc99c500a95c2bb28197b4da2e9af3[m
+Author: peta <coisasdohapo@gmail.com>
+Date:   Wed Jul 7 13:58:23 2021 +0100
+
+    Detect if key is pressed, and rotate object
+
+[33mcommit 50fb8e2249c2899a6ac9185dcb87aedbd6c310f3[m
+Author: peta <coisasdohapo@gmail.com>
+Date:   Wed Jul 7 13:46:47 2021 +0100
+
+    Add game loop
+
+[33mcommit 8de05bb4472d59986a66ed95cc2e1a5cf811f759[m
+Author: peta <coisasdohapo@gmail.com>
+Date:   Wed Jul 7 13:43:52 2021 +0100
+
+    Adding timer
+
+[33mcommit 085a596be4eb462bb9d95869841333542a8dd00e[m
+Author: peta <coisasdohapo@gmail.com>
+Date:   Wed Jul 7 13:41:11 2021 +0100
+
+     Creating Pyramid and placing it on scene
+
+[33mcommit 115c22b4c2c20ee0ccdd8b9d0418fb318833192b[m
+Author: peta <coisasdohapo@gmail.com>
+Date:   Wed Jul 7 13:35:02 2021 +0100
+
+    Creating triangles using create_tri and Points
+
+[33mcommit 2c0e7f895a031e07ad83f386169504875d291aca[m
+Author: peta <coisasdohapo@gmail.com>
+Date:   Wed Jul 7 13:23:48 2021 +0100
+
+    Following logic used in the def sphere, creating number of points
+
+[33mcommit 3b9f46d80a7a260c124a3bc5bf75d5eccc40209c[m
+Author: peta <coisasdohapo@gmail.com>
+Date:   Tue Jul 6 12:14:46 2021 +0100
+
+    Creating triangle portion of piramid and Scene/Camera
+
+[33mcommit b40732940c4573ffdcb9660507c1b45e55e72f3a[m
+Author: peta <coisasdohapo@gmail.com>
+Date:   Tue Jul 6 10:18:22 2021 +0100
+
+    Removing unnecessary files
+
+[33mcommit 3b3cd3098abb7ab87863a09ee877eff0116f7b6a[m
+Author: peta <coisasdohapo@gmail.com>
+Date:   Tue Jul 6 10:15:48 2021 +0100
+
+    Testing repository by adding file
+
+[33mcommit 325c2c6b8ae1e762701534b537f209b005bf7a4a[m
+Author: DiogoDeAndrade <43502412+DiogoDeAndrade@users.noreply.github.com>
+Date:   Mon Jul 5 09:42:34 2021 +0100
+
+    Update README.md
+
+[33mcommit 46cfae8240a6f4bb566678cce54fce4abb068864[m
+Author: Diogo de Andrade <diogo.g.andrade@gmail.com>
+Date:   Tue Jun 15 15:03:47 2021 +0100
+
+    Project released

@@ -144,11 +144,11 @@ def main():
             #Take coordinate x,y,z and add value to x.
             obj1.position=Vector3(obj1.position.x-0.001,obj1.position.y,obj1.position.z-0.001)
             
-            
+         
             
             
 
             
-
+            
             
 
