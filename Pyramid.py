@@ -60,7 +60,7 @@ def main():
                 if event.key == pygame.K_ESCAPE:
                     return
 
-        #Detect if key is pressed and rotate object
+        #Detect if key is pressed and rotate object around +yAxis
         if event.key == pygame.K_LEFT:
             angle = 0.1
             axis = Vector3(0, 1, 0)
@@ -69,7 +69,7 @@ def main():
             q = Quaternion.AngleAxis(axis, math.radians(angle) * 0.1)
             obj1.rotation = q * obj1.rotation
 
-        #Detect if key is pressed and rotate object
+        #Detect if key is pressed and rotate object around -yAxis
         if event.key == pygame.K_RIGHT:
             angle = -0.1
             axis = Vector3(0, 1, 0)
@@ -78,7 +78,7 @@ def main():
             q = Quaternion.AngleAxis(axis, math.radians(angle) * 0.1)
             obj1.rotation = q * obj1.rotation
 
-        #Detect if key is pressed and rotate object
+        #Detect if key is pressed and rotate object around +xAxis
         if event.key == pygame.K_UP:
             angle = 0.1
             axis = Vector3(1, 0, 0)
@@ -87,7 +87,7 @@ def main():
             q = Quaternion.AngleAxis(axis, math.radians(angle) * 0.1)
             obj1.rotation = q * obj1.rotation
 
-        #Detect if key is pressed and rotate object
+        #Detect if key is pressed and rotate object around -xAxis
         if event.key == pygame.K_DOWN:
             angle = -0.1
             axis = Vector3(1, 0, 0)
@@ -96,16 +96,16 @@ def main():
             q = Quaternion.AngleAxis(axis, math.radians(angle) * 0.1)
             obj1.rotation = q * obj1.rotation
 
-        #Detect if key is pressed and rotate object
+        #Detect if key is pressed and rotate object around +zAxis
         if event.key == pygame.K_PAGEUP:
             angle = 0.1
-            axis = Vector3(0, 0, 2)
+            axis = Vector3(0, 0, 1)
             axis.normalize()
             ax = (axis * math.radians(angle) * 0.1)
             q = Quaternion.AngleAxis(axis, math.radians(angle) * 0.1)
             obj1.rotation = q * obj1.rotation
 
-        #Detect if key is pressed and rotate object
+        #Detect if key is pressed and rotate object around -zAxis
         if event.key == pygame.K_PAGEDOWN:
             angle = -0.1
             axis = Vector3(0, 0, 1)
