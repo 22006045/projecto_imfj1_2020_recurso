@@ -315,9 +315,9 @@ class Mesh:
         return mesh
 
     @staticmethod
-    def create_Pyramide(sides, mesh=None):
+    def create_Pyramid(sides, mesh=None):
         """
-        Adds the n polygons necessary to form s Pyramide with the given sides.
+        Adds the n polygons necessary to form s Pyramid with the given sides.
         If a source mesh is not given, a new mesh is created.
         This Pyramide will be centered on the origin (0,0,0).
 
@@ -331,11 +331,18 @@ class Mesh:
 
         # Create mesh if one was not given
         if mesh is None:
-            mesh = Mesh("UnknownPyramide")
+            mesh = Mesh("UnknownPyramid")
 
-        #Add triangle part of pyramide
+        #Add triangle part of pyramid
         Points = []
-        adding_angle = 360/(sides)
+        Plus_angle = 360/(sides)
         radius = 0.5
         angle = 0
         next_point = 1
+        
+        #First point has 0 degree angle, and the following depend on the number os sides the pyramid has.
+        #Following the logic used by the teacher in the triangles for the sphere, using values for pyramid.
+        for point in range (sides):
+            Points.append((radius*math.cos((angle/180)*math.pi),radius*math.sin((angle/180)*math.pi)))
+            angle += Plus_angle
+                
