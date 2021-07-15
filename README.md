@@ -22,3 +22,15 @@ Devido a problemas pessoais, não comecei sequer a fazer o FPS.
 
 E inicialmente não sabia bem como haveria de fazer a pirâmide mas seguindo os passos do professor consegui.
 
+
+
+### GitHub :
+
+Nome Aluno : Pedro Ferreira 22006045
+
+Nome GitHub : 22006045, mas commits aparecem com nome Projeto2-LP1(não sei porque)
+
+link repositório : https://github.com/PedroJuanTorres/projecto_imfj1_2020
+
+
+
