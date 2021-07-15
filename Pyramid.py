@@ -145,10 +145,20 @@ def main():
             obj1.position=Vector3(obj1.position.x-0.001,obj1.position.y,obj1.position.z-0.001)
             
          
-            
-            
+        # Clears the screen with a very dark blue (0, 0, 20)
+        screen.fill((0, 0, 0))
 
+        scene.render(screen)
+
+        # Swaps the back and front buffer, effectively displaying what we rendered
+        pygame.display.flip()
+
+        # Updates the timer, so we we know how long has it been since the last frame
+        delta_time = time.time() - prev_time
+        prev_time = time.time() 
             
+# Run the main function
+main() 
             
             
 
